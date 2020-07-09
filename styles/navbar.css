@@ -68,6 +68,7 @@
 	font-family: var(--main-font-little);
 	border: none;
 	border-bottom: 1px solid #3aafb9;
+	z-index: 2;
 }
 
 .addTaskInput:focus {
@@ -79,6 +80,7 @@
 	top: 14px;
 	font-size: 12px;
 	color: #3aafb9;
+	z-index: 1;
 }
 
 .addTaskInput:focus ~ .addNew {
@@ -128,6 +130,7 @@
 	font-family: var(--main-font-little);
 	border: none;
 	border-bottom: 1px solid #3aafb9;
+	z-index: 2;
 }
 .searchPlaceHolder {
 	position: absolute;
@@ -135,6 +138,7 @@
 	top: 14px;
 	font-size: 12px;
 	color: #3aafb9;
+	z-index: 1;
 }
 .searchIcon {
 	position: absolute;

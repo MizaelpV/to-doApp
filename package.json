@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": " DEVELOPMENT=dev next dev",
+    "build": "BUILD=build next build",
+    "start": "PRODUCTION=start next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
