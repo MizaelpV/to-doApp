@@ -1,0 +1,172 @@
+.navbar-container {
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	height: 330px;
+	padding: 40px;
+	background: #22181c;
+}
+.welcomeUser {
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	font-family: var(--main-font-little);
+	font-size: 0.8rem;
+}
+.day {
+	color: #fff;
+	font-size: 3.6rem;
+	text-transform: capitalize;
+	letter-spacing: 4px;
+	position: absolute;
+	top: 50px;
+	left: 190px;
+	font-family: 'Fredoka One', cursive;
+}
+
+.containerDate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1.5rem;
+	color: #fff;
+	position: absolute;
+	top: 115px;
+	left: 330px;
+	font-family: var(--main-font-little);
+}
+.line {
+	background: #3aafb9;
+	height: 0.7px;
+	width: 130px;
+	position: absolute;
+	top: 130px;
+	left: 200px;
+}
+.month {
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+}
+
+.dayNumber {
+	font-size: 1.3rem;
+	margin-left: 1rem;
+}
+
+.formAddTask {
+	position: absolute;
+	bottom: 15px;
+	left: 50px;
+}
+.addTaskInput {
+	width: 400px;
+	padding: 10px;
+	position: relative;
+	background: transparent;
+	color: #fff;
+	font-family: var(--main-font-little);
+	border: none;
+	border-bottom: 1px solid #3aafb9;
+}
+
+.addTaskInput:focus {
+	outline: none;
+}
+.addNew {
+	position: absolute;
+	left: 7px;
+	top: 14px;
+	font-size: 12px;
+	color: #3aafb9;
+}
+
+.addTaskInput:focus ~ .addNew {
+	top: 4px;
+	font-size: 6.5px;
+	transition: 0.3s ease all;
+	opacity: 0.7;
+}
+
+.btnAdd {
+	margin-left: 8px;
+	border-radius: 50%;
+	padding: 10px 16px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	background: #ff7143;
+	cursor: pointer;
+}
+
+.btnAdd:hover {
+	background: rgb(224, 91, 47);
+}
+
+.btnAdd:focus {
+	outline: none;
+}
+
+.btnAdd:active {
+	transform: scale(0.9);
+}
+
+.searchTaskContainer {
+	position: absolute;
+	bottom: 15px;
+	right: 50px;
+	height: fit-content;
+}
+
+.searchTask {
+	position: relative;
+	width: 400px;
+	padding: 10px;
+	background: transparent;
+	color: #fff;
+	font-family: var(--main-font-little);
+	border: none;
+	border-bottom: 1px solid #3aafb9;
+}
+.searchPlaceHolder {
+	position: absolute;
+	left: 7px;
+	top: 14px;
+	font-size: 12px;
+	color: #3aafb9;
+}
+.searchIcon {
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+	height: fit-content;
+}
+
+.faiconSearch {
+	color: #ff7143;
+}
+
+.searchTask:focus {
+	outline: none;
+}
+
+.searchTask:focus ~ .searchPlaceHolder {
+	top: 4px;
+	font-size: 6.5px;
+	transition: 0.3s ease all;
+	opacity: 0.7;
+}
+
+.tasksPending {
+	position: absolute;
+	right: 8%;
+	top: 40%;
+	padding: 10px;
+}
+
+.tasksPending h4 {
+	font-size: 1rem;
+	color: #3aafb9;
+	font-family: var(--main-font-little);
+}

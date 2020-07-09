@@ -1,0 +1,262 @@
+@media screen and (max-width: 1024px) {
+	.visibility {
+		border: none;
+		border-top: 1px solid #3aafb9;
+		border-bottom: 1px solid #3aafb9;
+	}
+
+	.showDone {
+		right: 27%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.showDone {
+		position: absolute;
+		bottom: 7px;
+		right: 20%;
+	}
+
+	.toogleCheck {
+		position: absolute;
+		width: 30px;
+		right: 180px;
+		bottom: 16px;
+	}
+
+	.navbar-container {
+		height: 250px;
+	}
+	.addTaskInput {
+		width: 250px;
+		padding: 10px;
+		position: relative;
+		background: transparent;
+		color: #fff;
+		font-family: var(--main-font-little);
+		border: none;
+		border-bottom: 1px solid #3aafb9;
+	}
+
+	.btnAdd {
+		margin-left: 4px;
+		border-radius: 50%;
+		padding: 6px 11px;
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+		border: none;
+		background: #ff7143;
+	}
+
+	.searchTask {
+		position: relative;
+		width: 250px;
+		padding: 10px;
+		background: transparent;
+		color: #fff;
+		font-family: var(--main-font-little);
+		border: none;
+		border-bottom: 1px solid #3aafb9;
+	}
+
+	.day {
+		color: #fff;
+		font-size: 3rem;
+		text-transform: capitalize;
+		letter-spacing: 4px;
+		position: absolute;
+		top: 35px;
+		left: 80px;
+		font-family: 'Fredoka One', cursive;
+	}
+
+	.line {
+		background: #3aafb9;
+		height: 0.7px;
+		width: 130px;
+		position: absolute;
+		top: 106px;
+		left: 85px;
+	}
+
+	.containerDate {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem 1.5rem;
+		color: #fff;
+		position: absolute;
+		top: 88px;
+		left: 198px;
+		font-family: var(--main-font-little);
+	}
+
+	.tasksPending {
+		position: absolute;
+		right: 5%;
+		top: 40%;
+		padding: 10px;
+	}
+
+	.tasksPending h4 {
+		font-size: 0.8rem;
+		color: #3aafb9;
+		font-family: var(--main-font-little);
+	}
+
+	.checkmark {
+		width: 25px;
+		height: 25px;
+	}
+
+	.faiconTrash {
+		color: #ff7143;
+		width: 24px !important;
+		height: 24px;
+		opacity: 0.7;
+	}
+
+	.visibility {
+		border: none;
+		border-top: 1px solid #3aafb9;
+		border-bottom: 1px solid #3aafb9;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.visibility {
+		display: block;
+		height: 100px;
+	}
+
+	.showDone {
+		right: 44%;
+	}
+
+	.buttons {
+		right: 0;
+	}
+
+	.faiconTrash {
+		color: #ff7143;
+		width: 16px;
+		height: 16px;
+		opacity: 0.7;
+	}
+
+	.toogleCheck {
+		right: 70px;
+	}
+
+	.checkmark {
+		width: 20px;
+		height: 20px;
+	}
+	.tasksPending {
+		top: 52%;
+		left: 20%;
+	}
+	.tasksPending h4 {
+		font-size: 0.3rem;
+	}
+	.containerDate {
+		top: 116px;
+		left: 182px;
+	}
+
+	.line {
+		top: 128px;
+	}
+
+	.day {
+		top: 66px;
+		left: 58px;
+	}
+
+	.welcomeUser {
+		left: 20px;
+		font-size: 0.6rem;
+	}
+
+	.searchTaskContainer {
+		top: 0;
+		right: 15px;
+	}
+
+	.searchTask {
+		width: 150px;
+	}
+
+	.searchPlaceHolder {
+		top: 23px;
+		left: 6px;
+		font-size: 8px;
+	}
+	.searchIcon {
+		bottom: 0;
+		top: 10px;
+	}
+	.faiconSearch {
+		font-size: 14px;
+		top: 10px;
+	}
+	.formAddTask {
+		left: 20%;
+	}
+
+	.btnAdd {
+		margin-left: 10px;
+	}
+
+	.seeCompletedTitle {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.seeCompletedTitle {
+		font-size: 0.9rem;
+	}
+	.buttons {
+		right: -10%;
+	}
+	.toogleCheck {
+		right: 55px;
+	}
+	.formAddTask {
+		left: 15%;
+	}
+	.day {
+		left: 33px;
+	}
+	.tasksPending {
+		left: 15%;
+	}
+	.containerDate {
+		top: 113px;
+		left: 150px;
+	}
+
+	.title {
+		font-size: 0.6rem;
+	}
+
+	.btnAdd {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.searchTaskContainer {
+		right: 36px;
+	}
+	.formAddTask {
+		left: 9%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.addTaskInput {
+		width: 230px;
+	}
+}

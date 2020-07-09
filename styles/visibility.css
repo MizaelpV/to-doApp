@@ -1,0 +1,57 @@
+.visibility {
+	padding: 15px;
+	background: var(--main-bg);
+	border: 1px solid #3aafb9;
+	position: relative;
+}
+
+.seeCompletedTitle {
+	text-align: center;
+	color: #fff;
+	font-family: var(--main-font-little);
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+.showDone {
+	position: absolute;
+	bottom: 7px;
+	right: 30%;
+}
+
+.showDoneInput {
+	width: 50px;
+	height: 27.3px;
+	-webkit-appearance: none;
+	background: #3aafb9;
+	border-radius: 24px;
+	cursor: pointer;
+	position: relative;
+	box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.47);
+}
+
+.showDoneInput:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 27.3px;
+	height: 27.3px;
+	background: #fff;
+	border-radius: calc(27.3px / 2);
+	transition: 0.4s;
+	transform: scale(1.1);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.47);
+}
+.showDoneInput:focus {
+	outline: none;
+}
+
+.showDoneInput:checked {
+	background: #ff7143;
+	transition: 0.4s;
+}
+
+input:checked[class~='showDoneInput']:before {
+	left: 27.3px;
+	right: 0;
+}

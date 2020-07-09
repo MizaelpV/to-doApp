@@ -1,30 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# InfoCasas Frontend Challenge Criteria
 
-## Getting Started
+Welcome to the InfoCasas frontend coding challenge! Please read the following instructions carefully.
 
-First, run the development server:
+**Your goal is to set up a personal task management app that lets users to track and focus on the things they need to get done.**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   [Use cases](#use-cases)
+-   [Evaluation criteria](#evaluation-criteria)
+    -   [Technology requirements](#technology-requirements)
+    -   [Code requirements](Criteria.md#must-have)
+-   [How to submit](#how-to-submit)
+-   [API server](#api-server)
+-   [Time limit](#time-limit)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Use cases
 
-## Learn More
+The user shall be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- Create, list, delete, update todos (using the API provided below)
+- Filter by string
+- Sort by completeness
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The interactions should not refresh the page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Evaluation criteria
 
-## Deploy on Vercel
+## Technology requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Next.js](https://nextjs.org/) is a mandatory requirement. Apart from this, you can use any library.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Code requirements
+
+The full criteria for evaluating the coding challenge can be found [here](./Criteria.md).
+
+# How to submit
+
+- Clone this repository.
+- A RESTful API for `todos` is provided with the challenge. See: [API server](#api-server)
+- Complete your project as described above within your local repository.
+- Ensure everything you want to commit is committed before you bundle.
+- Create a git bundle: `git bundle create your_name.bundle --all`
+- Email the bundle file to your point of contact.
+
+# API server
+
+The service [JSONPlaceholder](https://jsonplaceholder.typicode.com) includes all the necessary methods required to achieve the goal (`POST`, `GET`, `PUT`, `PATCH`, and `DELETE`).
+
+Check [JSONPlaceholder](https://jsonplaceholder.typicode.com) for more information.
+
+# Time limit
+
+There is no hard time limit for this coding challenge. However, we believe that 6-8 hours is sufficient for the [must-have parts of the application](Criteria.md#must-have). Happy coding!
+
+Good luck,
+The InfoCasas Team

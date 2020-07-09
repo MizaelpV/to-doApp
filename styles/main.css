@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Code+Pro:ital@1&display=swap');
+:root {
+	background: #161012;
+	--main-font-little: 'Source Code Pro', monospace;
+	--main-bg: #22181c;
+	box-sizing: border-box;
+}
+#__next {
+	background: #161012;
+}
+
+.container-fluid {
+	max-width: 1200px !important;
+}
