@@ -15,13 +15,13 @@ export async function getStaticProps() {
 	};
 }
 
-function Home() {
+function Home({ data }) {
 	return (
 		<>
 			<Head>
 				<title>🔥Infocasas-Frontend-Challenge🔥</title>
 			</Head>
-			<App />
+			<App data={data} />
 		</>
 	);
 }

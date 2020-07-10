@@ -12,10 +12,11 @@ import ErrorView from './ErrorView';
 
 library.add(faTrash, faSearch);
 
-function App() {
+function App(props) {
+	const dataTasks = props.data;
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
-	const [tasks, setTasks] = useState([]);
+	const [tasks, setTasks] = useState(dataTasks);
 	const [query, setQuery] = useState('');
 	const [showCompleted, setshowCompleted] = useState(false);
 	const [newTask, setNewTask] = useState({
@@ -26,23 +27,18 @@ function App() {
 		}
 	});
 
-	const fetchDataTasks = async () => {
+	const getDataTasks = () => {
 		try {
 			setLoading(true);
-			await axios
-				.get('https://jsonplaceholder.typicode.com/todos')
-				.then(response => {
-					let data = response.data.splice(0, 6);
-					setTasks(data);
-				});
+			setTasks(dataTasks);
 		} catch (error) {
-			setError({ error: error });
+			setError(error);
 		}
 		setLoading(false);
 	};
 
 	useEffect(() => {
-		fetchDataTasks();
+		getDataTasks();
 	}, []);
 
 	const filtered = tasks.filter(t => {
