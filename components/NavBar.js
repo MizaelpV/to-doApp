@@ -30,6 +30,7 @@ const NavBar = props => {
 			'February',
 			'March',
 			'April',
+			'May',
 			'June',
 			'July',
 			'August',
@@ -49,7 +50,7 @@ const NavBar = props => {
 
 	return (
 		<div className='container-fluid  p-4 navbar-container p-5'>
-			<span className='welcomeUser'>Welcome, Infocasas 😊</span>
+			<span className='welcomeUser'>Welcome, user 😊</span>
 			<span className='day'>{todayName()}</span>
 			<div className='line'></div>
 			<div className='containerDate'>

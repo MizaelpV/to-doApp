@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import NavBar from '../components/NavBar';
 import TaskRow from '../components/TaskRow';
 import VisibilityControl from './VisibilityControl';
@@ -57,6 +56,7 @@ function App(props) {
 			id: Date.now()
 		});
 	};
+
 	//Adding it to the state
 	const handleAddTask = e => {
 		e.preventDefault();

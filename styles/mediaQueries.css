@@ -161,8 +161,9 @@
 		font-size: 0.3rem;
 	}
 	.containerDate {
-		top: 116px;
-		left: 182px;
+		top: 140px;
+		right: 35px;
+		padding: 0 !important;
 	}
 
 	.line {
@@ -234,8 +235,9 @@
 		left: 15%;
 	}
 	.containerDate {
-		top: 113px;
-		left: 150px;
+		top: 150px;
+		right: 50px;
+		padding: 0 !important;
 	}
 
 	.title {
@@ -258,5 +260,9 @@
 @media screen and (max-width: 320px) {
 	.addTaskInput {
 		width: 230px;
+	}
+
+	.containerDate {
+		padding: 0 !important;
 	}
 }
