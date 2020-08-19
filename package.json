@@ -6,7 +6,9 @@
   "scripts": {
     "dev": " DEVELOPMENT=dev next dev",
     "build": "BUILD=build next build",
-    "start": "PRODUCTION=start next start"
+    "start": "PRODUCTION=start next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
@@ -14,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
+    "gh-pages": "^3.1.0",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
